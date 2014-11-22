@@ -1,0 +1,25 @@
+{
+  "name": "MasabiTest",
+  "version": "1.0.0",
+  "description": "Masabi Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiddhustle/MasabiTest.git"
+  },
+  "author": "kiddhustle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiddhustle/MasabiTest/issues"
+  },
+  "homepage": "https://github.com/kiddhustle/MasabiTest",
+  "devDependencies": {
+    "karma-jasmine": "^0.3.1",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-requirejs": "^0.2.2",
+    "requirejs": "^2.1.15"
+  }
+}
