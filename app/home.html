@@ -1,0 +1,22 @@
+<section class="row">
+	<div class="columns large-12">
+		<table>
+			<thead>
+				<tr>
+					<th>Origin</th>
+					<th>Destination</th>
+					<th>Departure Time</th>
+					<th>Arrival Time</th>
+				</tr>
+			</thead>
+			<tbody data-bind="foreach:journeys">
+				<tr>
+					<td data-bind="text:originStation"></td>
+					<td data-bind="text:destinationStation"></td>
+					<td data-bind="text:startTime"></td>
+					<td data-bind="text:arrivalTime"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>

@@ -1,9 +1,9 @@
 requirejs.config({
     shim:{
-        'bootstrap':{
-            'deps':['jquery'],
-            'exports':'jQuery'
-        },
+        //'bootstrap':{
+        //    'deps':['jquery'],
+        //    'exports':'jQuery'
+        //},
         //'knockout':{
         //    'deps':['knockout'],
         //    'exports':'ko'
@@ -16,13 +16,11 @@ requirejs.config({
         'transitions' : '../bower_components/durandal/js/transitions',
         'knockout': '../bower_components/knockout.js/knockout',
         'jquery': '../bower_components/jquery/jquery',
-        'bootstrap':'../bower_components/dist/js/bootstrap',
+        //'bootstrap':'../bower_components/dist/js/bootstrap',
     }
 });
      
-define(function (require) {
-    var system = require('durandal/system'),
-    app = require('durandal/app');
+define(['durandal/system', 'durandal/app' ],function (system, app) {
      
     system.debug(true);
      
@@ -30,7 +28,8 @@ define(function (require) {
      
     app.configurePlugins({
         router:true,
-        dialog: true
+        dialog: true,
+        observable:true
     });
      
     app.start().then(function() {
