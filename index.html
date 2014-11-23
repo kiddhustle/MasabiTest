@@ -16,18 +16,32 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/assets/images/favicon.ico">
 		<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+		<link type="text/css" href="bower_components/foundation/css/normalize.css" />
+		<link type="text/css" href="bower_components/foundation/css/foundation.css" />
+		<style>
+			body {
+				background: #CD950C;
+			}
+			.layout {
+				margin: 0px auto;
+				max-width:800px;
+			}
+		</style>
+		<script type="application/javascript" src="bower_components/modernizr/modernizr.js"></script>
 	</head>
 
 	<body>
-		<section class="row">
-            <div class="large-12 columns">
-                <div id="applicationHost">
-                    <div class="text-center">
-                        Loading
-                    </div>
-                </div>
-            </div>
-        </section>
+		<article class="layout">
+			<section class="row">
+	            <div class="large-12 columns">
+	                <div id="applicationHost">
+	                    <div class="text-center">
+	                        <p>Loading</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </section>
+        </article>
         <script type="application/javascript" data-main="app/main" src="bower_components/requirejs/require.js"></script>
 	</body>
 </html>

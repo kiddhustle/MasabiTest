@@ -21,6 +21,7 @@
     "durandal": "~2.1.0",
     "foundation": "~5.4.7",
     "jasmine": "~2.1.2",
-    "foundation-icon-fonts": "*"
+    "foundation-icon-fonts": "*",
+    "moment": "~2.8.4"
   }
 }

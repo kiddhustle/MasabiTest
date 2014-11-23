@@ -1,7 +1,7 @@
 define( 
 	['durandal/system', 'knockout', 'plugins/http'], 
 	function( system, ko, http ){
-		var url = 'data/journeys.json';
+		var api_url = '/data/journeys.json';
 		
 		return function(){
 			var self = this;
@@ -19,7 +19,7 @@ define(
 				}
 				
 				system.log('ACTIVATED');
-				return http.get( url ).then( function(response){
+				return http.get( api_url ).then( function(response){
 					system.log('PARSE');
 					system.log(response);
 					//response = JSON.parse( response );
