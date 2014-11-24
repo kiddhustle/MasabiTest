@@ -1,6 +1,14 @@
 Masabi Test
 
+Requirements:
 
+npm install -g karma-cli
+npm install -g phantomjs
+npm install karma-qunit
+#npm install karma-jasmine --save-dev
+npm install karma-phantomjs-launcher --save-dev
+
+Brief:
 
 Implement the following spec in a mobile platform of your choice (a responsive Angular app would be fine, we can adjust the window size to simulate landscape/portrait mode etc). 
 
@@ -38,3 +46,4 @@ The resulting code is expected to demonstrate:
     TDD approach
     Platform specific design knowledge
     Ability to construct the UI and UX in a sensible and consistent way
+    
