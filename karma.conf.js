@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Sat Nov 22 2014 20:31:48 GMT+0000 (GMT)
+// Generated on Sun Nov 23 2014 23:45:17 GMT+0000 (GMT)
 
 module.exports = function(config) {
   config.set({
@@ -10,21 +10,26 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine', 'requirejs'],
+    frameworks: ['qunit', 'requirejs'],
 
 
     // list of files / patterns to load in the browser
     files: [
       'test/test-main.js',
+      {pattern: 'test/**/*.test.js', included: false},
       {pattern: 'app/**/*.js', included: false},
-      {pattern: 'bower_components/**/*.js', included: false},
-      {pattern: 'test/**/*.spec.js', included: false}
+      {pattern: 'bower_components/requirejs-text/text.js', included: false},
+      {pattern: 'bower_components/knockout.js/knockout.js', included: false},
+      {pattern: 'bower_components/jquery/jquery.js', included: false},
+      {pattern: 'bower_components/moment/moment.js', included: false},
+      {pattern: 'bower_components/durandal/js/**/*.js', included: false},
+      //{pattern: 'bower_components/knockout.js/knockout/*.js', included: false},
     ],
 
 
     // list of files to exclude
     exclude: [
-    	'app/main.js'
+      'app/main.js'
     ],
 
 

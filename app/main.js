@@ -16,7 +16,8 @@ requirejs.config({
         'transitions' : '../bower_components/durandal/js/transitions',
         'knockout': '../bower_components/knockout.js/knockout',
         'jquery': '../bower_components/jquery/jquery',
-        'moment':'../bower_components/moment/moments.js',
+        'moment':'../bower_components/moment/moment',
+        //'jasmine':'../bower_components/jasmine/lib',
         //'bootstrap':'../bower_components/dist/js/bootstrap',
     }
 });

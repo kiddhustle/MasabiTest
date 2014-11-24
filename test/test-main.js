@@ -14,8 +14,17 @@ Object.keys(window.__karma__.files).forEach(function(file) {
 
 require.config({
   // Karma serves files under /base, which is the basePath from your config file
-  baseUrl: '/base',
-
+  baseUrl: 'base/',
+	paths: {
+        'text': 'bower_components/requirejs-text/text',
+        'durandal':'bower_components/durandal/js',
+        'plugins' : 'bower_components/durandal/js/plugins',
+        'transitions' : 'bower_components/durandal/js/transitions',
+        'knockout': 'bower_components/knockout.js/knockout',
+        'jquery': 'bower_components/jquery/jquery',
+        'moment':'bower_components/moment/moment',
+        //'bootstrap':'../bower_components/dist/js/bootstrap',
+   },
   // dynamically load all test files
   deps: allTestFiles,
 
