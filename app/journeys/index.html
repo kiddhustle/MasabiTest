@@ -1,22 +1,24 @@
 <section class="row">
 	<div class="columns large-12">
-		<table>
+		<table class="footable" id="tbl_journey_index">
 			<thead>
 				<tr>
 					<th>Origin</th>
 					<th>Destination</th>
 					<th>Departure Time</th>
 					<th>Arrival Time</th>
+					<th data-hide="mobile">More info</th>
 				</tr>
 			</thead>
-			<tbody data-bind="foreach:journeys">
+			<!-- http://stackoverflow.com/a/20811414 -->
+			<tbody data-bind="footable:journeys,, delegatedHandler: 'click'">
 				<tr>
 					<td data-bind="text:originStation"></td>
 					<td data-bind="text:destinationStation"></td>
 					<td data-bind="text:startTime"></td>
 					<td data-bind="text:arrivalTime"></td>
-					<td>
-						<a class="button" data-bind="attr:{href:'/#journey/' + order + '/' }">More info</a>
+					<td class="text-center">
+						<a class="button" data-bind="attr:{href:'/#journey/' + order + '/' }">details</a>
 					</td>
 				</tr>
 			</tbody>

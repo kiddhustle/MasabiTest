@@ -1,6 +1,6 @@
 <section class="row">
 	<div class="columns large-12">
-		<table data-bind="with:journey">
+		<table data-bind="with:journey" id="tbl_journey_detail" class="footable table">
 			<tbody>
 				<tr>
 					<th scope="row">Origin Station</th>
@@ -17,6 +17,10 @@
 				<tr>
 					<th scope="row">Arrival Time</th>
 					<td data-bind="text:arrivalTime"></td>
+				</tr>
+				<tr>
+					<th scope="row">Duration</th>
+					<td data-bind="text:duration_string()"></td>
 				</tr>
 				<tr>
 					<th scope="row">Operator</th>

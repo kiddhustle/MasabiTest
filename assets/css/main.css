@@ -1,0 +1,18 @@
+body {
+	background: #CD950C;
+}
+.layout {
+	margin: 0px auto;
+	max-width:800px;
+}
+.font-outline {
+	color: white;
+	text-shadow:
+		-1px -1px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+table {
+	width:100%;
+}

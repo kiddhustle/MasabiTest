@@ -1,6 +1,6 @@
 define( 
-	['durandal/system', 'knockout', 'plugins/http', 'plugins/observable'], 
-	function( system, ko, http, observable ){
+	['durandal/system', 'knockout', 'plugins/http', 'plugins/observable', 'footable', 'journeys/viewmodel'], 
+	function( system, ko, http, observable, $, JourneyVM ){
 		var api_url = '/data/journeys.json';
 		
 		return function(){
@@ -28,7 +28,9 @@ define(
 					} )[0];
 					system.log('oItem');
 					system.log(oItem);
-					self.journey = oItem;
+					self.journey = new JourneyVM( oItem );
+					system.log($);
+					$('#tbl_journey_detail').footable();
 					//system.log('self.journey');
 					//system.log(self.journey);
 				} );

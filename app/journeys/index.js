@@ -1,6 +1,6 @@
 define( 
-	['durandal/system', 'knockout', 'plugins/http'], 
-	function( system, ko, http ){
+	['durandal/system', 'knockout', 'plugins/http','footable', 'knockout.footable'], 
+	function( system, ko, http, $ ){
 		var api_url = '/data/journeys.json';
 		
 		return function(){
@@ -24,6 +24,7 @@ define(
 					system.log(response);
 					//response = JSON.parse( response );
 					self.journeys( response );
+					$('#tbl_journey_index').footable();
 				} );
 			};
 		};
