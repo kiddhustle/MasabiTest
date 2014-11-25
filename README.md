@@ -8,6 +8,9 @@ npm install karma-qunit
 #npm install karma-jasmine --save-dev
 npm install karma-phantomjs-launcher --save-dev
 
+# install bower_components
+bower install 
+
 Brief:
 
 Implement the following spec in a mobile platform of your choice (a responsive Angular app would be fine, we can adjust the window size to simulate landscape/portrait mode etc). 
