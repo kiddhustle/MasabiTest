@@ -2,14 +2,26 @@ Masabi Test
 
 Requirements:
 
+npm install
+# global dependancies
 npm install -g karma-cli
 npm install -g phantomjs
-npm install karma-qunit
+npm install -g http-server
+#npm install karma-qunit
 #npm install karma-jasmine --save-dev
-npm install karma-phantomjs-launcher --save-dev
+#npm install karma-phantomjs-launcher --save-dev
 
 # install bower_components
 bower install 
+
+Start server
+
+cd to this directory and run command:
+
+http-server
+
+navigate browser to : http://127.0.0.1:8080
+
 
 Brief:
 
