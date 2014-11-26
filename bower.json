@@ -23,7 +23,8 @@
     "jasmine": "~2.1.2",
     "foundation-icon-fonts": "*",
     "moment": "~2.8.4",
-    "footable": "~2.0.3"
+    "footable": "~2.0.3",
+    "accounting.js": "~0.3.2"
   },
   "devDependencies": {
     "qunit": "~1.15.0"

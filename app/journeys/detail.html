@@ -26,7 +26,34 @@
 					<th scope="row">Operator</th>
 					<td data-bind="text:operator"></td>
 				</tr>
+				<tr>
+					<th>View Tickets</th>
+					<td><a data-reveal-id="firstModal" class="button alert radius"><i class="fi fi-price-tag"></i> Prices</a></td>
+				</tr>
 			</tbody>
 		</table>
+		<div id="firstModal" class="reveal-modal" data-reveal="data-reveal">
+		  <h2>Tickets</h2>
+		  <table data-bind="with:journey">
+		  	<thead>
+		  		<tr>
+		  			<th>Type</th>
+		  			<th>Price (GBP)</th>
+		  			<th>Purchase</th>
+		  		</tr>
+		  	</thead>
+		  	<tbody data-bind="foreach:ticketPrices">
+		  		<tr>
+		  			<td data-bind="text:shortName"></td>
+		  			<td data-bind="text:$parent.fmtCurrency( price )"></td>
+		  			<td>
+		  				<a data-bind="attr:{href:'#' + $parent.order}" class="button alert small"><i class="fi fi-shopping-cart"></i> Purchase</a>
+		  			</td>
+		  		</tr>
+		  		
+		  	</tbody>
+		  </table>
+		  <a class="close-reveal-modal">&#215;</a>
+		</div>
 	</div>
 </section>

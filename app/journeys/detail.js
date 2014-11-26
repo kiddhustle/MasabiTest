@@ -1,7 +1,7 @@
 define( 
-	['durandal/system', 'knockout', 'plugins/http', 'plugins/observable', 'footable', 'journeys/viewmodel'], 
+	['durandal/system', 'knockout', 'plugins/http', 'plugins/observable', 'footable', 'journeys/viewmodel', 'foundation'], 
 	function( system, ko, http, observable, $, JourneyVM ){
-		var api_url = '/data/journeys.json';
+		var api_url = '/data/journeysPrices.json';
 		
 		return function(){
 			var self = this;
@@ -29,11 +29,20 @@ define(
 					system.log('oItem');
 					system.log(oItem);
 					self.journey = new JourneyVM( oItem );
-					system.log($);
-					$('#tbl_journey_detail').footable();
+					//system.log($);
 					//system.log('self.journey');
 					//system.log(self.journey);
 				} );
+			};
+			
+			self.bindingComplete = function(view){
+				system.log('Binding complete');
+				$('#tbl_journey_detail').footable();
+				
+			};
+			self.compositionComplete = function(view, parent){
+				system.log('Composition complete');
+				$(document).foundation();
 			};
 		};
 	}

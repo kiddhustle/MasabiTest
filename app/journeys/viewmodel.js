@@ -1,6 +1,6 @@
 define(
-	['durandal/system', 'durandal/app', 'knockout', 'plugins/http', 'moment'],
-	function(system, app, ko, http, moment){
+	['durandal/system', 'durandal/app', 'knockout', 'plugins/http', 'moment', 'accounting'],
+	function(system, app, ko, http, moment, accounting){
 		return function(obj){
 			var self = this;
 			self.order = null;
@@ -9,6 +9,7 @@ define(
 			self.startTime = ko.observable();
 			self.arrivalTime = ko.observable();
 			self.operator = ko.observable();
+			self.ticketPrices = ko.observableArray();
 			self.duration = function(){
 				var iDay = 86400000;
 				var delta = moment.utc( self.arrivalTime(), 'hh:mm:ss' ) - moment.utc( self.startTime(), 'hh:mm:ss' );
@@ -20,6 +21,9 @@ define(
 			self.duration_string = function(){
 				return moment.utc( self.duration().as('milliseconds') ).format('hh:mm:ss');
 			};
+			self.fmtCurrency = function(val){
+				return accounting.formatMoney( val, '£' );
+			};
 			self.init = function(){
 				if(obj){
 					self.order = obj.order;
@@ -28,6 +32,7 @@ define(
 					self.startTime( obj.startTime );
 					self.arrivalTime( obj.arrivalTime );
 					self.operator( obj.operator );
+					self.ticketPrices( obj.ticketPrices );
 				}
 			};
 			if(obj){

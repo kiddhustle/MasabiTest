@@ -6,6 +6,8 @@ requirejs.config({
         'transitions' : '../bower_components/durandal/js/transitions',
         'knockout': '../bower_components/knockout.js/knockout',
         'knockout.footable': '../lib/knockout/knockout.binding.footable',
+        'foundation': '../bower_components/foundation/js/foundation.min',
+        'accounting': '../bower_components/accounting.js/accounting.min',
         'jquery': '../bower_components/jquery/jquery',
         'moment':'../bower_components/moment/moment',
         'footable':'../bower_components/footable/dist/footable.all.min',

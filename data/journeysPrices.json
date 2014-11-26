@@ -1,0 +1,87 @@
+[
+	{
+		"order": 0,
+		"originStation": "Brighton",
+		"destinationStation": "London Victoria",
+		"operator": "Southern Trains",
+		"startTime": "23:50:00",
+		"arrivalTime": "01:00:00",
+		"ticketPrices":[
+			{
+				"shortName":"Standard",
+				"price":8.50
+			},
+			{
+				"shortName":"First Class",
+				"price":11.30
+			}
+		]
+	}, {
+		"order": 3,
+		"originStation": "Brighton",
+		"destinationStation": "London Bridge",
+		"operator": "Southern Trains",
+		"startTime": "15:51:00",
+		"arrivalTime": "18:35:00",
+		"ticketPrices":[
+			{
+				"shortName":"Standard",
+				"price":9.20
+			},
+			{
+				"shortName":"First Class",
+				"price":15.70
+			}
+		]
+	}, {
+		"order": 4,
+		"originStation": "Brighton",
+		"destinationStation": "London Victoria",
+		"operator": "Southern Trains",
+		"startTime": "12:43:00",
+		"arrivalTime": "14:23:00",
+		"ticketPrices":[
+			{
+				"shortName":"Standard",
+				"price":7.70
+			},
+			{
+				"shortName":"First Class",
+				"price":12.30
+			}
+		]
+	}, {
+		"order": 1,
+		"originStation": "Brighton",
+		"destinationStation": "London Bridge",
+		"startTime": "10:25:00",
+		"arrivalTime": "12:00:00",
+		"ticketPrices":[
+			{
+				"shortName":"Standard",
+				"price":16.80
+			},
+			{
+				"shortName":"First Class",
+				"price":24.95
+			}
+		]
+	}, {
+		"order": 2,
+		"originStation": "Brighton",
+		"destinationStation": "London Victoria",
+		"operator": "Southern Trains",
+		"startTime": "17:00:00",
+		"arrivalTime": "19:00:00",
+		"ticketPrices":[
+			{
+				"shortName":"Standard",
+				"price":17.25
+			},
+			{
+				"shortName":"First Class",
+				"price":23.20
+			}
+		]
+	}
+]
