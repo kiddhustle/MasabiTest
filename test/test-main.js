@@ -23,6 +23,7 @@ require.config({
         'knockout': 'bower_components/knockout.js/knockout',
         'jquery': 'bower_components/jquery/jquery',
         'moment':'bower_components/moment/moment',
+        'accounting':'bower_components/accounting.js/accounting.min',
         //'bootstrap':'../bower_components/dist/js/bootstrap',
    },
   // dynamically load all test files

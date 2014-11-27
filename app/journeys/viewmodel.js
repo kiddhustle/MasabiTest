@@ -24,6 +24,11 @@ define(
 			self.fmtCurrency = function(val){
 				return accounting.formatMoney( val, '£' );
 			};
+			
+			self.getTicketUrl = function(oTicket){
+				system.debug('getTicketUrl');
+				return '#checkout/' + self.order +'?shortName=' + oTicket.shortName + '&price=' + accounting.formatMoney(oTicket.price,'');
+			};
 			self.init = function(){
 				if(obj){
 					self.order = obj.order;

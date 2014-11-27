@@ -23,6 +23,7 @@ module.exports = function(config) {
       {pattern: 'bower_components/jquery/jquery.js', included: false},
       {pattern: 'bower_components/moment/moment.js', included: false},
       {pattern: 'bower_components/durandal/js/**/*.js', included: false},
+      {pattern: 'bower_components/accounting.js/accounting.min.js', included: false},
       //{pattern: 'bower_components/knockout.js/knockout/*.js', included: false},
     ],
 
