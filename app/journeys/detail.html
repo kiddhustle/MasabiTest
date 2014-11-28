@@ -37,7 +37,7 @@
 		  <table data-bind="with:journey">
 		  	<thead>
 		  		<tr>
-		  			<th>Type</th>
+		  			<th>Ticket Type</th>
 		  			<th>Price (GBP)</th>
 		  			<th>Purchase</th>
 		  		</tr>
@@ -47,7 +47,7 @@
 		  			<td data-bind="text:shortName"></td>
 		  			<td data-bind="text:$parent.fmtCurrency( price )"></td>
 		  			<td>
-		  				<a data-bind="attr:{href:$parent.getTicketUrl( $data )" class="button alert small"><i class="fi fi-shopping-cart"></i> Purchase</a>
+		  				<a data-bind="attr:{href:$parent.getTicketUrl( $data )}" class="button alert small"><i class="fi fi-shopping-cart"></i> Buy Ticket</a>
 		  			</td>
 		  		</tr>
 		  		

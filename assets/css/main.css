@@ -1,3 +1,8 @@
+@import url("../../bower_components/foundation/css/normalize.css");
+@import url("../../bower_components/foundation/css/foundation.css");
+@import url("../../bower_components/foundation-icon-fonts/foundation-icons.css");
+@import url("../../bower_components/footable/css/footable.standalone.min.css");
+
 body {
 	background: #CD950C;
 }

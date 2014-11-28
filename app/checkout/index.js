@@ -5,27 +5,18 @@ define(
 		
 		return function(){
 			var self = this;
-			self.journeys = ko.observableArray();
+			self.ticket = {};
+			self.journey = ko.observable();
 			self.sortBy = function(type){
 				return function(a, b){
 					
 				};
 			};
-			self.activate = function(){
+			self.activate = function(journey_id, oParams){
 				
-				// cancel http request if journeys already populated 
-				if( self.journeys().length > 0 ){
-					return;
-				}
-				
-				system.log('ACTIVATED');
-				return http.get( api_url ).then( function(response){
-					system.log('PARSE');
-					system.log(response);
-					//response = JSON.parse( response );
-					self.journeys( response );
-					$('#tbl_journey_index').footable();
-				} );
+				var oItem = response.filter( function(val, index, arr){
+					return parseInt( val.order ) === parseInt( journey_id ) ? true : false;
+				} )[0];
 			};
 			
 			self.bindingComplete = function(view){
